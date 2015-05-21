@@ -13,11 +13,13 @@ public class MealOrderItem implements UUIDEntity {
 
 	private String accountId;
 
-	private Double price;
+	private String mealId;
 
 	private Integer quantity;
 
 	private Date created;
+
+	private Boolean deleted;
 
 	public String getId() {
 		return id;
@@ -35,12 +37,12 @@ public class MealOrderItem implements UUIDEntity {
 		this.accountId = accountId;
 	}
 
-	public Double getPrice() {
-		return price;
+	public String getMealId() {
+		return mealId;
 	}
 
-	public void setPrice(Double price) {
-		this.price = price;
+	public void setMealId(String mealId) {
+		this.mealId = mealId;
 	}
 
 	public Integer getQuantity() {
@@ -57,6 +59,14 @@ public class MealOrderItem implements UUIDEntity {
 
 	public void setCreated(Date created) {
 		this.created = created;
+	}
+
+	public Boolean getDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(Boolean deleted) {
+		this.deleted = deleted;
 	}
 
 }
