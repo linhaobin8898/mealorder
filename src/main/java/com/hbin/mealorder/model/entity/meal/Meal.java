@@ -1,10 +1,12 @@
 package com.hbin.mealorder.model.entity.meal;
 
 import com.lifesense.framework.mybatis.entity.id.UUIDEntity;
+import com.lifesense.framework.mybatis.interceptor.generatesql.annotation.Id;
 
 @SuppressWarnings("serial")
 public class Meal implements UUIDEntity {
 
+	@Id
 	private String id;
 
 	private String name;
