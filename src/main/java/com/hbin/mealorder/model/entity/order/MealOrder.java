@@ -11,11 +11,11 @@ public class MealOrder implements UUIDEntity {
 	@Id
 	private String id;
 
-	private Date created;
-	
 	private Double total;
 
 	private Integer status;
+
+	private Date created;
 
 	public String getId() {
 		return id;
@@ -25,12 +25,12 @@ public class MealOrder implements UUIDEntity {
 		this.id = id;
 	}
 
-	public Date getCreated() {
-		return created;
+	public Double getTotal() {
+		return total;
 	}
 
-	public void setCreated(Date created) {
-		this.created = created;
+	public void setTotal(Double total) {
+		this.total = total;
 	}
 
 	public Integer getStatus() {
@@ -41,12 +41,12 @@ public class MealOrder implements UUIDEntity {
 		this.status = status;
 	}
 
-	public Double getTotal() {
-		return total;
+	public Date getCreated() {
+		return created;
 	}
 
-	public void setTotal(Double total) {
-		this.total = total;
+	public void setCreated(Date created) {
+		this.created = created;
 	}
 
 }
