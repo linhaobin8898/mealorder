@@ -12,6 +12,8 @@ public class Meal implements UUIDEntity {
 	private String name;
 
 	private Double price;
+	
+	private Boolean deleted;
 
 	public String getId() {
 		return id;
@@ -35,6 +37,14 @@ public class Meal implements UUIDEntity {
 
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+
+	public Boolean getDeleted() {
+		return deleted;
+	}
+
+	public void setDeleted(Boolean deleted) {
+		this.deleted = deleted;
 	}
 
 }
