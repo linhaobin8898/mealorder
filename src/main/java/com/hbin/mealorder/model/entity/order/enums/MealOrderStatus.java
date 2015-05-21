@@ -1,4 +1,4 @@
-package com.hbin.mealorder.model.entity.order;
+package com.hbin.mealorder.model.entity.order.enums;
 
 public enum MealOrderStatus {
 
